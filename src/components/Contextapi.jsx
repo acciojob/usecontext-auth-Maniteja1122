@@ -7,21 +7,22 @@ const Contextapi = () => {
   return (
     <div>
       <h1>Click on the checkbox to get authenticated</h1>
-      
+
       <p className="authText">
         {isHuman
-          ? "you are now authenticated, you can proceed"
-          : "you are not authenticated"}
+          ? "You are now authenticated, you can proceed"
+          : "You are not authenticated"}
       </p>
 
       <br />
 
       <input
         type="checkbox"
+        id="authCheck"
         checked={isHuman}
         onChange={(e) => setIsHuman(e.target.checked)}
       />
-      <label>I'm not a robot</label>
+      <label htmlFor="authCheck">I'm not a robot</label>
     </div>
   );
 };
