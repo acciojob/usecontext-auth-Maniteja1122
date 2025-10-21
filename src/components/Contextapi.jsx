@@ -11,7 +11,7 @@ const Contextapi = () => {
       <p className="authText">
         {isHuman
           ? "You are now authenticated, you can proceed"
-          : "You are not authenticated"}
+          : "user is not authenticated "}
       </p>
 
       <br />
